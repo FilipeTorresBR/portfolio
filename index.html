@@ -5,44 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filipe Kaue Torres Soares</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <div class="link-flow">
-            <a>Home</a>
-            <a>Skills</a>
-            <a>Projetos</a>
+        <div class="link flow">
+            <a href="#home">HOME</a>
+            <a href="#skills">HABILIDADES</a>
+            <a href="#projetos">PROJETOS</a>
         </div>
-        <div class="link-social">
-            <a>Linkedin</a>
-            <a>Github</a>
-            <a>Instagram</a>
+        <div class="link social">
+            <figure>
+                <a target="_blank" href="https://linkedin.com/in/filipe-kaue"><img class="skill-logo" src="assets/img/linkedin-logo.png" alt="Icone de redirecionamento para o meu linkedin"></a>
+            </figure>
+            <figure>
+                <a target="_blank" href="https://github.com/filipetorresbr"><img class="skill-logo" src="assets/img/github-logo.png" alt="Icone de redirecionamento para o meu github"></a>
+            </figure>
+            <figure>
+                <a target="_blank" href="https://instagram.com/about.torrex"><img class="skill-logo" src="assets/img/Instagram-logo.png" alt="Icone de redirecionamento para o meu instagram"></a>
+            </figure>
         </div>
     </nav>
-    <div class="home">
-        <div class="phrase">
-            <p>
-                Estudante de Engenharia de Computação, tenho experiência como desenvolvedor
-                web em PHP e Javascript em pequenos projetos, conhecimento em sistemas de
-                gerenciamento de banco de dados relacionais, sistema de versionamento Git e API
-                REST
-            </p>
+    <div class="home" id="home">
+        <div class="home-text">
+            <div class="small">
+                <p>
+                    Olá, mundo. Eu sou o
+                </p>
+            </div>
+            <div class="big">
+                <p>
+                    Filipe Torres
+                </p>
+            </div>
+            <div class="small">
+                <p>
+                    Desenvolvedor back-end Jr.
+                </p>
+            </div>
         </div>
+
         <figure>
-            <img src="me.jpeg"> 
+            <!--img class="my-pic" src="assets/img/me.jpeg"-->
         </figure>
     </div>
-    <div class="skills">
-        <p>SKILLS</p>
-        <p>PHP</p>
-        <p>Python</p>
-        <p>JS</p>
-        <p>MySQL</p>
+    <div class="skills" id="skills">
+        <figure>
+            <img class="skill-logo" src="assets/img/html-logo.png" alt="Logo do PHP">
+        </figure>
+        <figure>
+            <img class="skill-logo" src="assets/img/css-logo.png" alt="Logo do PHP">
+        </figure>
+        <figure>
+            <img class="skill-logo" src="assets/img/PHP-logo.png" alt="Logo do PHP">
+        </figure>
+        <figure>
+            <img class="skill-logo" src="assets/img/Python-logo.png" alt="Logo do Python">
+        </figure>
+        <figure>
+            <img class="skill-logo" src="assets/img/JS-logo.png" alt="Logo do Javascript">
+        </figure>
+        <figure>
+            <img class="skill-logo" src="assets/img/MySQL-logo.png" alt="Logo do MySQL">
+        </figure>
+        <figure>
+            <img class="skill-logo" src="assets/img/git-logo.png" alt="Logo do Git">
+        </figure>
     </div>
-    <div class="projetos">
-        <div class="projeto1"></div>
-        <div class="projeto2"></div>
+    <div class="projetos" id="projetos">
+        <div class="lado-esquerdo">
+            <a target="_blank" href="https://github.com/filipetorresbr/simdmvc">
+                <div class="projeto1">
+                    <h1>SIMD: Sistema Interno de Manipulação de Dados</h1>
+                    <figure>
+                        <img class="projeto-img" src="assets/img/simd-loginpage.png">
+                    </figure>
+                </div>
+
+            </a>
+        </div>
+
+        <div class="projeto-divisor"></div>
+
+        <div class="lado-direito">
+            <a target="_blank" href="https://github.com/filipetorresbr/clean-show-desktop">
+                <div class="projeto2">
+                    <h1>Clean Show Desktop - Applet para interface Cinnamon</h1>
+                    <figure>
+                        <img class="projeto-img" src="assets/img/csd-screenshot.png">
+                    </figure>
+                </div>
+            </a>
+        </div>
     </div>
 </body>
 </html>
