@@ -15,7 +15,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    height: 200vh;
+    height: calc(200vh + 400px);
 }
 nav{
     display: flex;
@@ -42,13 +42,12 @@ nav{
     justify-content: space-around;
     align-items: center;
     background-color: var(--secondary-color);
-    height: calc(100vh - 100px);
+    height: 80vh;
 }
 .home-text{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    justify-content: center;
     color: var(--primary-color);
 }
 .home-text .small{
@@ -59,9 +58,28 @@ nav{
 .home-text .big{
     font-size: 90px;
 }
-.my-pic{
-    width: 360px;
-    height: 640px;
+.sobre{
+    height: 400px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    gap: 50px;
+}
+.sobre-pic{
+    width: 256px;
+    height: 284px;
+    border-radius: 25px;
+    z-index: 5;
+}
+.sobre-text{
+    font-size: 25px;
+    color: var(--primary-color);
+    background-color: var(--terciary-color);
+    padding: 50px;
+    border-radius: 25px;
+    width: 40%;
 }
 .skills{
     display: flex;
