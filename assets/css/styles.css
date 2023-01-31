@@ -130,3 +130,8 @@ nav{
 .skill-logo{
     width: 75px;
 }
+button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
