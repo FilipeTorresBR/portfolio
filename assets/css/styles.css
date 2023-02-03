@@ -19,6 +19,7 @@ body{
 }
 nav{
     display: flex;
+    position: sticky;
     justify-content: space-around;
     align-items: center;
     min-height: 100px;
@@ -130,8 +131,12 @@ nav{
 .skill-logo{
     width: 75px;
 }
-button{
+.easteregg-btn {
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    display: none;
+}
+.show{
+    display: block;
 }
