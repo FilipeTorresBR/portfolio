@@ -17,6 +17,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     height: calc(200vh + 400px);
 }
+/* Inicio do estilo da Navbar */
 nav{
     display: flex;
     position: sticky;
@@ -38,6 +39,17 @@ nav{
 .social img{
     width: 40px;
 }
+.easteregg-btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+.show{
+    display: block;
+}
+/* Fim do estilo da Navbar */
+
 .home{
     display: flex;
     justify-content: space-around;
@@ -131,12 +143,7 @@ nav{
 .skill-logo{
     width: 75px;
 }
-.easteregg-btn {
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    display: none;
-}
-.show{
-    display: block;
-}
+
+/* Inicio do estilo da pagina de detalhes do projeto */
+
+/* Fim do estilo da pagina de detalhes do projeto */
