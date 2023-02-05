@@ -191,7 +191,7 @@ a:hover,.button-gen:hover{
     width: 200px;
 }
 .descricao-container{
-    height: 20vh;
+    height: 50vh;
     color: var(--primary-color);
     display: flex;
     justify-content: space-around;
@@ -224,5 +224,70 @@ a:hover,.button-gen:hover{
 .skill img{
     width: 50px;
     margin-right: 10px;
+}
+.screenshot-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+.screenshot-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-screenshot{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    bottom: 0;
+    width: 40%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.number{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 24px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    align-self: center;
+}
+.prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.slide{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slide img{
+    width: 50%;
+}
+.dots{
+    display: flex;
+    margin-top: 10px;
+    gap: 5px
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot:hover{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
 }
 /* Fim do estilo da pagina de detalhes do projeto */
