@@ -10,12 +10,19 @@
 a{
     text-decoration: none !important;
     color: var(--primary-color);
+    padding: 5px;
+}
+a.can-hover:hover{
+    background-color: var(--primary-color);
+    color: var(--terciary-color);
+    border-radius: 5px;
+    animation-name: fade;
+    animation-duration: 0.30s;
 }
 body{
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
-    height: calc(200vh + 400px);
     background-color: var(--secondary-color);
 }
 /* Inicio do estilo da Navbar */
@@ -28,6 +35,16 @@ nav{
     font-size: 22px;
     color: var(--primary-color);
     background-color: var(--terciary-color);
+    box-shadow: black 0px 10px 30px 1px;
+}
+footer{
+    background-color: var(--terciary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: black 0px 10px 30px 1px;
+
 }
 .link{
     min-width: 250px;
@@ -53,16 +70,19 @@ nav{
 
 .home{
     display: flex;
-    justify-content: space-around;
+    width: 50vw;
+    height: 50vh;
+    justify-content: space-between;
     align-items: center;
+    align-self: center;
     background-color: var(--secondary-color);
-    height: 80vh;
 }
 .home-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--primary-color);
+    border-radius: 25px;
 }
 .home-text .small{
     font-family: sans-serif;
@@ -85,7 +105,9 @@ nav{
     width: 256px;
     height: 284px;
     border-radius: 25px;
-    z-index: 5;
+    box-shadow: black 0px 10px 30px 1px;
+    object-fit: cover;
+    object-position: 20% 0%;
 }
 .sobre-text{
     font-size: 25px;
@@ -93,7 +115,8 @@ nav{
     background-color: var(--terciary-color);
     padding: 50px;
     border-radius: 25px;
-    width: 40%;
+    width: 50%;
+    box-shadow: black 0px 10px 30px 1px;
 }
 .skills-main-page   {
     display: flex;
@@ -139,7 +162,10 @@ nav{
     height: 300px;
 }
 .projeto-img:hover{
-    opacity: 0.5;  
+    opacity: 0.4;  
+    animation-direction: reverse;
+    animation-name: fade;
+    animation-duration: 0.30s;
 }
 .skill-logo{
     width: 75px;
@@ -151,7 +177,7 @@ nav{
     height: 25vh;
     object-fit: cover;
     object-position: 0 45%;
-    opacity: 0.5;
+    opacity: 0.4;
     box-shadow: black 0px 10px 30px 1px;
     border-bottom: 2px solid black;
 }
@@ -183,7 +209,7 @@ nav{
     align-items: center;
     border-radius: 5px;
 }
-a:hover,.button-gen:hover{
+.button-gen:hover{
     background: var(--primary-color);
     color: var(--terciary-color);
 }
@@ -231,6 +257,7 @@ a:hover,.button-gen:hover{
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
+    margin-bottom: 25px;
 }
 .screenshot-carousel{
     display: flex;
@@ -286,8 +313,18 @@ a:hover,.button-gen:hover{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
-.dot:hover{
+.active, .dot:hover{
     background-color: var(--secondary-color);
     border: 1px solid var(--primary-color);
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 /* Fim do estilo da pagina de detalhes do projeto */
