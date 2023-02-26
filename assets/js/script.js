@@ -15,6 +15,11 @@ function checkLocalStorage(){
     }
 }
 
+function toogleMenuMobile(){
+    var element = document.getElementById("menu");
+    element.classList.toggle("mobile");
+}
+
 window.onload = checkLocalStorage;
 
 let slideIndex = 1;

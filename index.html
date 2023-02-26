@@ -17,6 +17,13 @@
             <a class="can-hover" href="#skills">HABILIDADES</a>
             <a class="can-hover" href="#projetos">PROJETOS</a>
         </div>
+        <div class="link mobile" onclick="toogleMenuMobile()">X
+            <div class="menu-mobile" id="menu">
+                <a class="can-hover" href="#home">HOME</a>
+                <a class="can-hover" href="#skills">HABILIDADES</a>
+                <a class="can-hover" href="#projetos">PROJETOS</a>
+            </div>
+        </div>
         <div class="link social">
             <figure>
                 <button class="easteregg-btn" id="easteregg-btn" onclick="audio.play();"><img class="skill-logo" src="assets/img/joey.png" alt="Botao surpresa"></button>
@@ -50,14 +57,19 @@
                 </p>
             </div>
         </div>
-        <figure>
-            <img class="sobre-pic" src="assets/img/me.jpeg">
-        </figure>
+        <div class="sobre-pic">
+            <img src="assets/img/me.jpeg">
+        </div>
         
     </div>
     <div class="sobre">
         <div class="sobre-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis esse libero ducimus pariatur consectetur, odio veritatis dolor asperiores, nobis obcaecati, voluptatibus rerum molestiae iure odit dolore saepe ratione voluptates tempora.</p>
+            <p>
+                Estudante de Engenharia de Computação, tenho experiência como desenvolvedor
+                web em PHP e Javascript em pequenos projetos, conhecimento em sistemas de
+                gerenciamento de banco de dados relacionais, sistema de versionamento Git e API
+                REST
+            </p>
         </div>
     </div>
     <div class="skills-main-page" id="skills">
@@ -83,31 +95,24 @@
             <img class="skill-logo" src="assets/img/git-logo.png" alt="Logo do Git">
         </figure>
     </div>
-    <div class="projetos" id="projetos">
-        <div class="lado-esquerdo">
-            <a class="" href="simd-detalhes.html">
-                <div class="projeto1">
-                    <h1>SIMD</h1>
-                    <figure>
-                        <img class="projeto-img" src="assets/img/simd-loginpage.png">
-                    </figure>
-                </div>
-
-            </a>
-        </div>
-
-        <div class="projeto-divisor"></div>
-
-        <div class="lado-direito">
-            <a target="_blank" href="https://github.com/filipetorresbr/clean-show-desktop">
-                <div class="projeto2">
-                    <h1>Clean Show Desktop</h1>
-                    <figure>
-                        <img class="projeto-img" src="assets/img/csd-screenshot.png">
-                    </figure>
-                </div>
-            </a>
-        </div>
+    <h1 class="projetos-h1" id="projetos">Projetos</h1>
+    <div class="projetos" >
+        <a class="" href="simd-detalhes.html">
+            <div class="projeto">
+                <h1>SIMD</h1>
+                <figure>
+                    <img class="projeto-img" src="assets/img/simd-loginpage.png">
+                </figure>
+            </div>
+        </a>
+        <a href="clean-show-desktop-detalhes.html">
+            <div class="projeto">
+                <h1>Clean Show Desktop</h1>
+                <figure>
+                    <img class="projeto-img" src="assets/img/csd-screenshot.png" style="object-position: right;">
+                </figure>
+            </div>
+        </a>
     </div>
     <footer>
         <p>Feito por Filipe Torres</p>
