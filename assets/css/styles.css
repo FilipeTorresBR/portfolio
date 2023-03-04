@@ -113,16 +113,16 @@ footer{
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 256px;
-    height: 284px;
-    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
     overflow: hidden;
     padding: 5px;
 }
 .sobre-pic::after{
     content: "";
-    width: 375px;
-    height: 395px;
+    width: 150%;
+    height: 150%;
     position: absolute;
     background-image: conic-gradient(transparent, transparent, transparent, #403573);
     animation: animate 4s linear infinite;
@@ -130,8 +130,8 @@ footer{
 }
 .sobre-pic::before{
     content: "";
-    width: 375px;
-    height: 395px;
+    width: 150%;
+    height: 150%;
     position: absolute;
     background-image: conic-gradient(transparent, transparent, transparent, #3B733B);
     animation: animate 4s linear infinite;
@@ -141,8 +141,8 @@ footer{
     border-radius: 25px;
     background-color: black;
     z-index: 1;
-    width: 250px;
-    height: 280px;
+    width: 96%;
+    height: 96%;
     object-fit: cover;
     object-position: 20% 0%;
 }
@@ -214,32 +214,20 @@ footer{
     box-shadow: black 0px 10px 30px 1px;
     border-bottom: 2px solid black;
 }
-.object-position-center{
-    object-position: 0 45%;
-}
-.object-position-bottom{
-    object-position: 20% 100%;
-}
-.detalhes{
-    margin-top: -150px;
-    height: 300px;
-    width: 70vw;
-    margin-left: 20vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
 .logo-titulo{
     display: flex;
-    justify-content: flex-start;
+    width: auto;
     align-items: center;
     font-size: 52px;
     color: var(--primary-color);
-    justify-content: space-between;
     font-weight: bold;
+    margin-left: 15vw;
+    margin-top: -6vw;
+    z-index: 2;
 }
 .logo-titulo p{
     width: auto;
+    align-self: center;
 }
 .github-link{
     justify-self: flex-end;
@@ -273,13 +261,12 @@ footer{
     max-width: 40vw;
     font-size: 22px;
     margin-bottom: 25px;
-
 }
 .skills-projeto{
     width: 15vw;
-    height: 30vh;
+    height: auto;
     background-color: var(--terciary-color);
-    border-radius: 10px;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -382,6 +369,9 @@ footer{
 
 @media (max-width: 600px){
     .flow{display: none;}
+    nav{
+        width: 100vw;
+    }
     .menu-mobile{
         font-size: 25px;
         flex-direction: column;
@@ -426,30 +416,30 @@ footer{
         font-size: 45px;
     }
     .sobre{
-        height: auto;
+        height: 400px;
         background-color: var(--secondary-color);
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: flex-start;
         padding: 50px;
+        gap: 50px;
     }
     .sobre-pic{
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
-        width: 256px;
-        height: 284px;
-        border-radius: 10%;
+        width: 300px;
+        height: 300px;
+        border-radius: 25px;
         overflow: hidden;
         padding: 5px;
-        margin-top: 30px;
-
     }
     .sobre-pic::after{
         content: "";
-        width: 375px;
-        height: 395px;
+        width: 150%;
+        height: 150%;
         position: absolute;
         background-image: conic-gradient(transparent, transparent, transparent, #403573);
         animation: animate 4s linear infinite;
@@ -457,8 +447,8 @@ footer{
     }
     .sobre-pic::before{
         content: "";
-        width: 375px;
-        height: 395px;
+        width: 150%;
+        height: 150%;
         position: absolute;
         background-image: conic-gradient(transparent, transparent, transparent, #3B733B);
         animation: animate 4s linear infinite;
@@ -468,8 +458,8 @@ footer{
         border-radius: 25px;
         background-color: black;
         z-index: 1;
-        width: 250px;
-        height: 280px;
+        width: 96%;
+        height: 96%;
         object-fit: cover;
         object-position: 20% 0%;
     }
@@ -479,7 +469,7 @@ footer{
         background-color: var(--terciary-color);
         padding: 25px;
         border-radius: 25px;
-        width: 100%;
+        width: 85%;
         box-shadow: black 0px 10px 30px 1px;
     }
     .skills-main-page{
@@ -509,4 +499,150 @@ footer{
         margin: 45px auto;
         font-size: 45px;
     }
+    .capa-projeto{
+        width: 100%;
+        height: 25vh;
+        opacity: 0.4;
+        object-fit: cover;
+        box-shadow: black 0px 10px 30px 1px;
+        border-bottom: 2px solid black;
+    }
+    .logo-titulo{
+        display: flex;
+        height: 30vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 42px;
+        color: var(--primary-color);
+        font-weight: bold;
+        margin-top: -110px;
+        z-index: 3;
+    }
+    .logo-titulo img{
+        width: 40vw;
+    }
+    .logo-titulo p{
+        width: auto;
+    }
+    .github-link{
+        justify-self: flex-end;
+    }
+.button-gen{
+    background: var(--terciary-color);
+    width: 120px;
+    height: 50px;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.button-gen:hover{
+    background: var(--primary-color);
+    color: var(--terciary-color);
+}
+.logo-projeto{
+    border-radius: 50%;
+    object-fit: fill;
+    width: 100px;
+}
+.projeto-descricao{
+    height: auto;
+}
+.skills-projeto{
+    width: 60vw;
+    height: auto;
+    background-color: var(--terciary-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+}
+.skill{
+    display: flex;
+    color: var(--primary-color);
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.skills-projeto h1{
+    color: var(--primary-color);
+    align-self: center;
+    margin-bottom: 25px;
+}
+.skill img{
+    width: 50px;
+    margin-right: 10px;
+}
+.screenshot-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+.screenshot-carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-screenshot{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 12px;
+    bottom: 0;
+    width: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.number{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 24px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    align-self: center;
+}
+.prev, .next {
+    cursor: pointer;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+.slide{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slide img{
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+}
+.dots{
+    display: flex;
+    margin-top: 10px;
+    gap: 5px
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+}
 }
