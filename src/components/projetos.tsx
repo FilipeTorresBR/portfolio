@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { ExternalLink, Github } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function ProjectsSection() {
   const projects = [
@@ -57,9 +58,11 @@ export function ProjectsSection() {
             >
               <Card className="overflow-hidden">
                 <div className="aspect-video overflow-hidden">
-                  <img
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
+                    width={500}
+                    height={500}
                     className="object-cover w-full h-full transition-transform duration-300 hover:scale-105"
                   />
                 </div>

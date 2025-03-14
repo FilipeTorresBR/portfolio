@@ -1,7 +1,3 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Frame } from "lucide-react"
-
 export function Footer() {
   return (
     <footer className="border-t py-6 md:py-0 flex justify-center">
